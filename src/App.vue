@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <h1>My Vue@2 App Two</h1>
+    <aside class="sidebar">
+      <SideBarMenu/>
+    </aside>
+    <router-view></router-view>
   </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+//import HelloWorld from './components/HelloWorld.vue'
+import SideBarMenu from './components/SideBarMenu.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    //HelloWorld,
+    SideBarMenu
   }
 }
 </script>
